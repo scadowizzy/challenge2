@@ -62,7 +62,7 @@ main{
        display: flex;
        width: 100%;
        min-height: 40vh;
-       background-image: url(./laptop.jfif);
+       background-image: url(./images/image-header-desktop.jpg);
        background-repeat: no-repeat;
        background-position: cover;
        background-size: cover;
