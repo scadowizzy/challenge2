@@ -46,7 +46,7 @@ main{
     color: hsl(0, 0%, 100%)
 }
 .right{
-    background-image: url(./laptop.jfif);
+    background-image: url(./images/image-header-desktop.jpg);
     background-repeat: no-repeat;
     background-position: cover;
     background-size: cover;
