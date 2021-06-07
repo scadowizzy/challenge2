@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+    
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 60vh;
+    max-width: 80vw;
+    margin: 130px auto;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    padding:20px 50px;
+    background-color: hsl(244, 38%, 16%);
+    justify-content:space-evenly;
+    border-radius: 15px 0 0 15px;
+}
+.left h1{
+    width: 80%;
+    color: hsl(0, 0%, 100%)
+}
+.left h1 span{
+    color: hsl(277, 64%, 61%);
+}
+.left p{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 20px;
+    width: 70%;
+}
+.numbers {
+    display: flex;
+}
+.numbers p span{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%)
+}
+.right{
+    background-image: url(./laptop.jfif);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px hsla(277, 64%, 61%, 0.4);
+    border-radius: 0 15px 15px 0;
+}
+.top-img{
+    display: none;
+}
+/* design for phones */
+@media screen and (min-width:375px) and (max-width:885px) {
+   .top-img{
+       display: flex;
+       width: 100%;
+       min-height: 40vh;
+       background-image: url(./laptop.jfif);
+       background-repeat: no-repeat;
+       background-position: cover;
+       background-size: cover;
+       box-shadow: inset 0 0 0 2000px hsla(277, 64%, 61%, 0.4);
+       border-radius: 15px 15px 0 0;
+    }
+   .right{
+       display: none;
+   }
+   main{
+       display: flex;
+       flex-direction: column;
+       max-width: 100%;
+       min-height: 100vh;
+       margin: 0;
+       padding: 20px;
+   } 
+   .left{
+       padding: 0;
+       max-width: 100%;
+       min-height: 100vh;
+       justify-content: flex-start;
+       border-radius: 15px 15px 15PX 15PX;
+   }
+   .left h1{
+       text-align: center;
+       padding: 20px 0 0px 40px;
+       margin: 10px;
+    }
+    .left p{
+     text-align: center;
+     width: 100%;
+     padding:10px 30px 10px 30px;
+    }
+    .numbers{
+        display: grid;
+    }
+     
+}
